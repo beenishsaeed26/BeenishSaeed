@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPS530 Lab 10 - Framework Documentation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 0; }
+        .section-title { font-size: 2em; margin-top: 40px; color: #667eea; }
+        .code-block { background-color: #f5f5f5; padding: 15px; border-left: 4px solid #667eea; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="header center-align">
+        <div class="container">
+            <h1>Lab 10 Problem 2: Materialize CSS Framework</h1>
+            <p class="flow-text">Student Name - CPS530 Fall 2025</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="section-title"><i class="material-icons">build</i> Framework Installation</h2>
+                <p>I chose <strong>Materialize CSS</strong>, a modern responsive front-end framework based on Material Design principles.</p>
+                
+                <h5>Installation Steps:</h5>
+                <ol class="collection">
+                    <li class="collection-item">Created a GitHub repository named <code>YOUR-USERNAME.github.io</code></li>
+                    <li class="collection-item">Enabled GitHub Pages in repository settings (Settings → Pages → Source: main branch)</li>
+                    <li class="collection-item">Added Materialize CSS via CDN in the HTML head:
+                        <div class="code-block">
+                            <code>&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"&gt;</code>
+                        </div>
+                    </li>
+                    <li class="collection-item">Added Material Icons for icon support</li>
+                    <li class="collection-item">Created index.html and pushed to GitHub</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <h2 class="section-title"><i class="material-icons">code</i> How I Built This Page</h2>
+                <p>This page demonstrates key Materialize features:</p>
+                
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="card blue lighten-5">
+                            <div class="card-content">
+                                <span class="card-title">Grid System</span>
+                                <p>Used the 12-column responsive grid for layout structure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card purple lighten-5">
+                            <div class="card-content">
+                                <span class="card-title">Components</span>
+                                <p>Implemented cards, collections, and icons from the framework.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card pink lighten-5">
+                            <div class="card-content">
+                                <span class="card-title">Styling</span>
+                                <p>Applied Material Design color schemes and typography.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <h2 class="section-title"><i class="material-icons">warning</i> Difficulties Encountered</h2>
+                
+                <table class="striped highlight">
+                    <thead>
+                        <tr>
+                            <th>Challenge</th>
+                            <th>Solution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GitHub Pages deployment delay</td>
+                            <td>Waited 5-10 minutes after pushing changes for site to update</td>
+                        </tr>
+                        <tr>
+                            <td>Responsive design testing</td>
+                            <td>Used Chrome DevTools to test different screen sizes</td>
+                        </tr>
+                        <tr>
+                            <td>Understanding grid system</td>
+                            <td>Referred to Materialize documentation at materializecss.com</td>
+                        </tr>
+                        <tr>
+                            <td>Icon rendering</td>
+                            <td>Added Google Material Icons font link to HTML head</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <h2 class="section-title"><i class="material-icons">school</i> Learning Outcomes</h2>
+                <div class="card-panel teal lighten-4">
+                    <p><strong>Key Takeaways:</strong></p>
+                    <ul class="browser-default">
+                        <li>Frameworks significantly speed up development by providing pre-built components</li>
+                        <li>Material Design creates a consistent, modern look across devices</li>
+                        <li>CDN hosting makes framework integration simple without downloads</li>
+                        <li>GitHub Pages provides free, reliable hosting for static sites</li>
+                        <li>Responsive design is built-in, making mobile compatibility easy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer grey darken-3">
+        <div class="container center-align">
+            <p>CPS530 Lab 10 - Fall 2025 | Built with Materialize CSS</p>
+            <p>GitHub Repository: <a href="https://github.com/YOUR-USERNAME/YOUR-USERNAME.github.io" class="white-text">View Source</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
