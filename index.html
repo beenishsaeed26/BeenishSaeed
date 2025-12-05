@@ -6,212 +6,89 @@
     <title>CPS530 Lab 10 - Framework Documentation</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
-    <style>
-        body { 
-            font-family: 'Neuton', serif;
-            background-color: #ecc8af;
-            font-size: 1.3rem;
-        }
-        .header { 
-            background: linear-gradient(135deg, #800e13 0%, #ad2831 100%);
-            color: #ecc8af;
-            padding: 60px 0;
-        }
-        .header h1 {
-            font-family: 'Limelight', cursive;
-        }
-        .header p {
-            font-size: 1.5rem;
-        }
-        .section-title { 
-            font-size: 2em;
-            margin-top: 40px;
-            color: #800e13;
-            font-family: 'Limelight', cursive;
-        }
-        .code-block { 
-            background-color: #461220;
-            color: #ecc8af;
-            padding: 15px;
-            border-left: 4px solid #ad2831;
-            margin: 20px 0;
-            font-size: 1.1rem;
-        }
-        .card {
-            background-color: white !important;
-        }
-        .card-title {
-            color: #800e13 !important;
-            font-family: 'Limelight', cursive;
-        }
-        .card-content p {
-            font-size: 1.2rem;
-        }
-        table thead {
-            background-color: #ad2831;
-        }
-        table thead th {
-            color: #ecc8af;
-            font-size: 1.3rem;
-        }
-        table tbody td {
-            font-size: 1.2rem;
-        }
-        table.striped tbody tr:nth-child(odd) {
-            background-color: #ecc8af;
-        }
-        .card-panel {
-            background-color: #ad2831 !important;
-            color: #ecc8af !important;
-        }
-        .card-panel strong {
-            color: #ecc8af;
-            font-size: 1.3rem;
-        }
-        .card-panel ul li {
-            font-size: 1.2rem;
-            margin-bottom: 8px;
-        }
-        .page-footer {
-            background-color: #461220 !important;
-        }
-        .page-footer p {
-            font-size: 1.2rem;
-        }
-        .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .collection-item {
-            font-size: 1.2rem;
-        }
-        h5 {
-            font-size: 1.5rem;
-        }
-        p {
-            font-size: 1.3rem;
-        }
-    </style>
 </head>
 <body>
-    <div class="header center-align">
-        <div class="container" style="background-color: transparent;">
-            <h1>Lab 10 Problem 2: Materialize CSS Framework</h1>
-        </div>
-    </div>
-
     <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <h2 class="section-title"><i class="material-icons">build</i> Framework Installation</h2>
-                <p>I chose <strong>Materialize CSS</strong>, a modern responsive front-end framework based on Material Design principles!</p>
-                
-                <h5 style="color: #ad2831; font-family: 'Neuton', serif; font-weight: 700;">Installation Steps:</h5>
-                <ol class="collection">
-                    <li class="collection-item">Created a GitHub repository named BeenishSaeed.github.io</li>
-                    <li class="collection-item">Added Materialize CSS via CDN link in the HTML head:
-                            &lt;link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"&gt;
-                    </li>
-                    <li class="collection-item">Added Material Icons for icon support</li>
-                    <li class="collection-item">Created index.html and pushed repo to GitHub</li>
-                </ol>
-            </div>
+        <h1 class="center-align">Lab 10 Problem 2: Materialize CSS Framework</h1>
+        <div class="section">
+            <h2><i class="material-icons">build</i> Framework Installation</h2>
+            <p>I chose <strong>Materialize CSS</strong>, a modern responsive front-end framework based on Material Design principles.</p>
+            
+            <h5>Installation Steps:</h5>
+            <ol class="collection">
+                <li class="collection-item">Created a GitHub repository named BeenishSaeed.github.io</li>
+                <li class="collection-item">Enabled GitHub Pages in repository settings (Settings → Pages → Source: main branch)</li>
+                <li class="collection-item">Added Materialize CSS via CDN link in the HTML head:
+                    <pre style="background-color: #f5f5f5; padding: 10px; border-left: 3px solid #26a69a;">
+&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"&gt;</pre>
+                </li>
+                <li class="collection-item">Added Material Icons for icon support</li>
+                <li class="collection-item">Created index.html and pushed repo to GitHub</li>
+            </ol>
         </div>
 
-        <div class="row">
-            <div class="col s12">
-                <h2 class="section-title"><i class="material-icons">code</i> How I Built This Page</h2>
-                <p>This page demonstrates some key Materialize features:</p>
-                
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Grid System</span>
-                                <p>Used the 12-column responsive grid for layout structure.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Components</span>
-                                <p>Implemented cards, collections, and icons from the framework.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Styling</span>
-                                <p>Applied Material Design color schemes and typography.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="section">
+            <h2><i class="material-icons">code</i> How I Built This Page</h2>
+            <p>To build this page, I used the following Materialize features:</p>
+            <ul class="collection">
+                <li class="collection-item">Included the Materialize CSS library from the CDN</li>
+                <li class="collection-item">Used Materialize's container class for responsive layout</li>
+                <li class="collection-item">Applied Materialize's collection class for organized lists</li>
+                <li class="collection-item">Used Materialize table components for displaying difficulties</li>
+                <li class="collection-item">Applied basic Materialize typography and spacing utilities</li>
+            </ul>
         </div>
 
-        <div class="row">
-            <div class="col s12">
-                <h2 class="section-title"><i class="material-icons">warning</i> Difficulties Encountered</h2>
-                
-                <table class="striped highlight">
-                    <thead>
-                        <tr>
-                            <th>Challenge</th>
-                            <th>Solution</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>GitHub Pages deployment delay</td>
-                            <td>Waited 5-10 minutes after pushing changes for site to update</td>
-                        </tr>
-                        <tr>
-                            <td>Responsive design testing</td>
-                            <td>Used Chrome DevTools to test different screen sizes</td>
-                        </tr>
-                        <tr>
-                            <td>Understanding grid system (a bit complicated at first!)</td>
-                            <td>Referred to Materialize documentation at materializecss.com</td>
-                        </tr>
-                        <tr>
-                            <td>Icon rendering</td>
-                            <td>Added Google Icons link to HTML head</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="section">
+            <h2><i class="material-icons">warning</i> Difficulties Encountered</h2>
+            
+            <table class="striped highlight">
+                <thead>
+                    <tr>
+                        <th>Challenge</th>
+                        <th>Solution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GitHub Pages deployment delay</td>
+                        <td>Waited 5-10 minutes after pushing changes for site to update</td>
+                    </tr>
+                    <tr>
+                        <td>Responsive design testing</td>
+                        <td>Used Chrome DevTools to test different screen sizes</td>
+                    </tr>
+                    <tr>
+                        <td>Understanding grid system (a bit complicated at first!)</td>
+                        <td>Referred to Materialize documentation at materializecss.com</td>
+                    </tr>
+                    <tr>
+                        <td>Icon rendering</td>
+                        <td>Added Google Icons link to HTML head</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <div class="row">
-            <div class="col s12">
-                <h2 class="section-title"><i class="material-icons">school</i> Learning Outcomes</h2>
-                <div class="card-panel">
-                    <p><strong>Key Takeaways:</strong></p>
-                    <ul class="browser-default">
-                        <li>Frameworks like these significantly speed up development by providing pre-built components!</li>
-                        <li>Material Design creates a consistent, modern look across devices</li>
-                        <li>CDN hosting makes framework integration simple without having to do extra downloads</li>
-                        <li>GitHub Pages provides free, reliable hosting for sites</li>
-                        <li>Responsive design is built-in, making mobile compatibility easier!</li>
-                    </ul>
-                </div>
+        <div class="section">
+            <h2><i class="material-icons">school</i> Learning Outcomes</h2>
+            <div class="card-panel">
+                <p><strong>Key Takeaways:</strong></p>
+                <ul class="browser-default">
+                    <li>Frameworks like these significantly speed up development by providing pre-built components</li>
+                    <li>Material Design creates a consistent, modern look across devices</li>
+                    <li>CDN hosting makes framework integration simple without having to do extra downloads</li>
+                    <li>GitHub Pages provides free, reliable hosting for sites</li>
+                    <li>Responsive design is built-in, making mobile compatibility easier</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <footer class="page-footer">
-        <div class="container center-align" style="background-color: transparent;">
-            <p style="color: #ecc8af;">CPS530 Lab 10 - Fall 2025 | Beenish Saeed</p>
-            <p>GitHub Repository: <a href="https://github.com/beenishsaeed26/BeenishSaeed.github.io" class="white-text" style="color: #ecc8af !important;">View Source</a></p>
+        <div class="container center-align">
+            <p>CPS530 Lab 10 - Fall 2025 | Beenish Saeed</p>
+            <p>GitHub Repository: <a href="https://github.com/beenishsaeed26/BeenishSaeed.github.io" class="white-text">View Source</a></p>
         </div>
     </footer>
 
